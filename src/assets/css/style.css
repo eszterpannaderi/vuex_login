@@ -1,0 +1,21 @@
+.header{
+    height:250px;
+    background: url('@/assets/img/users2.png');
+    background-repeat: no-repeat;
+    background-position:right center;
+    background-size:contain;
+
+}
+
+.nav-bg-color{
+    background-color: lightblue;
+}
+
+.footer{
+    border-top:1px solid #ccc;
+    text-align: center;
+}
+
+.main{
+    min-height: 30vw;
+}
