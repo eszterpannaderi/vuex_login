@@ -24,7 +24,7 @@ router.beforeEach((to,from,next)=>{
   const publicPage = ['/','/bejelentkezes','/kijelentkezes'];
   const autRequired= !publicPage.includes(to.path)
   const isAuthenticaded = store.state.user.status
-  if(autRequired && isAuthenticaded){
+  if(autRequired && !isAuthenticaded){
     return next('/bejelentkezes')
   } else{
     next()
