@@ -51,13 +51,14 @@ export default {
 
 
             if(this.loginForm.email == 'a@a' &&
-               this.loginForm.password == 'Aa12345'){
+               this.loginForm.password == '123qwe'){
                    let loggedInUser={
                        email: this.loginForm.email,
                        username:'Józsi',
                        status:true
                    }
                    store.commit('setStatus',loggedInUser)
+                   this.$router.push('/')
                } else{
                    this.alertMessage='Sikertelen belépés!'
 
